@@ -23,6 +23,8 @@ chmod +x A1.sh
 ## for循环（建议在上述可执行脚本中编译）
 ```bash
 for i in Alpha Belta
+do
     echo $i > keep.txt
+done
 ```
 ## 环境变量（全大写）与取环境变量（$）
