@@ -11,6 +11,19 @@ tab点两次， 显示当前目录里的所有文件名，但不中断当前操�
 scp gsa_2023@emily.popgen.dk:/home/course/文件地址/文件名 /C/Desktop/文件夹地址
 ```
 ## 查看文件夹 ls
+查看最全的显示
+```bash
+ls -l
+```
+排序显示
+```bash
+## 按文件名排序
+ls -fl
+## 按文件大小排序
+ls -Sr
+## 按时间排序
+ls -tr
+```
 ## 查看文件size（行数，文本数等）wc 
 ## 建立可执行脚本
 ```bash
