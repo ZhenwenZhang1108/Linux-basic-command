@@ -28,6 +28,12 @@ do
 done
 ```
 ## 环境变量（全大写）与取变量（$）
+最常用的环境变量就是PATH
+```bash
+PATH=""
+##但用的时候记得取变量，即
+$PATH
+```
 ```bash
 for i in Alpha Belta
 do
