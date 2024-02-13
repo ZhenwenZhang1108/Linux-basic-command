@@ -11,7 +11,7 @@ tab点两次， 显示当前目录里的所有文件名，但不中断当前操�
 scp gsa_2023@emily.popgen.dk:/home/course/文件地址/文件名 /C/Desktop/文件夹地址
 ```
 ## 查看文件夹 ls
-查看最全的显示
+查看最全的显示，尤其是前十个字母的后九个，表示文件的权限
 ```bash
 ls -l
 ```
@@ -23,6 +23,13 @@ ls -fl
 ls -Sr
 ## 按时间排序
 ls -tr
+```
+## 文件的权限，即修改
+```bash
+chmod a+x <filename>
+chmod u=wr <filrname>
+chmod o=wr <filename>
+chomod g-x <filename>
 ```
 ## 查看文件size（行数，文本数等）wc 
 ## 建立可执行脚本
