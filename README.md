@@ -38,6 +38,16 @@ export PATH=$PATH:/public/home/bma/application/FastQC ##这样赋值的结果就
 export PATH=/usr/local/mongodb/bin:$PATH ## 冒号：其实是分隔符，这样是把我们的路径添加到原PATH集合的最前面
 ##但用的时候记得取变量，即
 echo $PATH ## 查看路径
+$ export TEST="Test..." #增加一个环境变量TEST
+
+$ env|grep TEST #此命令有输入，证明环境变量TEST已经存在了
+
+TEST=Test...
+
+$ unset $TEST #删除环境变量TEST
+
+$ env|grep TEST #此命令没有输出，证明环境变量TEST已经存在了
+
 ```
 ```bash
 for i in Alpha Belta
