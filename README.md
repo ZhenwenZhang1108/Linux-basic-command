@@ -27,4 +27,15 @@ do
     echo $i > keep.txt
 done
 ```
-## 环境变量（全大写）与取环境变量（$）
+## 环境变量（全大写）与取变量（$）
+```bash
+for i in Alpha Belta
+do
+    echo $i ## 这是打印Alpha 和Belta
+done
+
+for i in Alpha Belta
+do
+    echo i # 这就是打印i本身
+done
+```
