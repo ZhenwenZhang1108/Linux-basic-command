@@ -1,4 +1,4 @@
-# 张振文同学的Liunx小技巧
+# 张振文同学的Linux小技巧
 ## 一些快捷键
 tab点一次， 代码自动补全  
 tab点两次， 显示当前目录里的所有文件名，但不中断当前操作  
@@ -28,9 +28,11 @@ do
 done
 ```
 ## 环境变量（全大写）与取变量（$）
-最常用的环境变量就是PATH
+最常用的环境变量就是PATH  
+PATH说简单点就是一个字符串变量，当输入命令的时候LINUX会去查找PATH里面记录的路径  
+所以，path 配置的路径下的文件可以在任何位置执行，并且可以通过which 可执行文件 命令来找到该文件的位置  
 ```bash
-PATH=""
+$PATH=""
 ##但用的时候记得取变量，即
 $PATH
 ```
@@ -45,3 +47,25 @@ do
     echo i # 这就是打印i本身
 done
 ```
+## 压缩与解压缩
+注意区分 .zip .tar 和 .gz 文件
+还可以多重压缩和多重解压缩
+### 解压
+对于Winzip文件  
+```bash
+unzip <filename>
+```
+对于 .tar 和 .tar.gz文件
+```bash
+tar -xf <filename>
+```
+对于 .gz 文件
+```bash
+gunzip <filename>
+```
+### 压缩
+```bash
+tar -cf backup.tar <directory>
+gzip backup.tar
+```
+## 文件的简单操作（非编辑）
