@@ -29,12 +29,15 @@ done
 ```
 ## 环境变量（全大写）与取变量（$）
 最常用的环境变量就是PATH  
-PATH说简单点就是一个字符串变量，当输入命令的时候LINUX会去查找PATH里面记录的路径  
+PATH说简单点就是一个很长很长，集合所有地址的，字符串变量，  
+当输入命令的时候LINUX会去查找PATH里面记录的路径  
 所以，path 配置的路径下的文件可以在任何位置执行，并且可以通过which 可执行文件 命令来找到该文件的位置  
 ```bash
-$PATH=""
+export PATH= ##直接赋值的结果就是PATH里只有一条路径
+export PATH=$PATH:/public/home/bma/application/FastQC ##这样赋值的结果就是添加变量，因为PATH其实是个集合
+export PATH=/usr/local/mongodb/bin:$PATH ## 冒号：其实是分隔符，这样是把我们的路径添加到原PATH集合的最前面
 ##但用的时候记得取变量，即
-$PATH
+echo $PATH ## 查看路径
 ```
 ```bash
 for i in Alpha Belta
